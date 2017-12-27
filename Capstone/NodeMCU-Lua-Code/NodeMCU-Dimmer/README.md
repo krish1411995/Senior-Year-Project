@@ -19,5 +19,20 @@ A dimmer switch rapidly turns a light circuit on and off to reduce the energy fl
 ## Table
 | INPUT LEVEL  | D3 | D2 | D1 | D0 | DIMMER LEVEL |
 | ------------- | ------------- |  ------------- | ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| 1 | 0  | 0  | 0  | 0  | 100%  |
+| 2 | 0  | 0  | 0  | 1  | 86%  |
+| 3 | 0  | 0  | 1  | 0  | 80%  |
+| 4 | 0  | 0  | 1  | 1  | 75%  |
+| 5 | 0  | 1  | 0  | 0  | 60%  |
+| 6 | 0  | 1 | 0  | 1  | 65%  |
+| 7 | 0  | 1  | 1  | 0  | 60%  |
+| 8 | 0  | 1  | 1  | 1  | 50%  |
+| 9 | 1  | 0  | 0  | 0  | 40%  |
+| 10 | 1  | 0  | 0  | 1  | 30%  |
+| 11 | 1  | 0  | 1  | 0  | 25%  |
+| 12 | 1  | 0  | 1  | 1  | 20%  |
+| 13 | 1  | 1  | 0  | 0  | 15%  |
+| 14 | 1  | 1  | 0  | 1  | 10%  |
+| 15 | 1  | 1  | 1  | 0  | 5%  |
+| 16 | 1  | 1  | 1 | 1  | 0%  |
+
