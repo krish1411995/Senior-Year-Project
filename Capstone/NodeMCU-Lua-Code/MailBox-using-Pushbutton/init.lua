@@ -1,6 +1,5 @@
 app = require("application")  
 config = require("config")  
 setup = require("setup")
---krish1 = require("krish1")
-dht11 = require("dht11-3")
+mailbox = require("mailbox")
 setup.start()
