@@ -7,9 +7,7 @@ local function tem()
 end
 
 function module.start()  
-print("DHT call complete")
 gpio.trig(1,"up",tem)
---tmr.alarm( 3, 10000, 1, tem)
 end
 
 return module
