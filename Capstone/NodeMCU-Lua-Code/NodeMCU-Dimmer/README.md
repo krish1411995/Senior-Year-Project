@@ -3,6 +3,7 @@
 The init file is uploaded in the NodeMCU which is connected with the Dimmer Circuit. When the Automatic button from the application is pressed then the topic /nodemcu/intensity will have a send "hello" and then after every time interval the tem() function of init.lua file will run, which will check the value of the LDR(attached with nodeMCU), calculate and then automatically set the intensity of the bulb. In the manual mode the topic /nodemcu/intensity will send the values like 10%,20%,...,100% to change the intensity of the bulb manually.
 
 # Dimmer Circuit
+![screen shot 2017-12-27 at 12 44 04 am](https://user-images.githubusercontent.com/20076221/34376281-c9aa8dc6-ea9f-11e7-9253-6d3f12b13c87.png)
 
 ## Introduction
 
