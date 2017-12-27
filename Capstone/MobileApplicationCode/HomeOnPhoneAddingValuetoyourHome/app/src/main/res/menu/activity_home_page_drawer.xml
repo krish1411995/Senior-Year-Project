@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mod1"
+            android:icon="@drawable/ic_mod1"
+            android:title="Security through Geo-Fencing" />
+        <item
+            android:id="@+id/nav_onoff"
+            android:icon="@drawable/ic_on_off"
+            android:title="Light On/Off" />
+        <item
+            android:id="@+id/nav_mod2"
+            android:icon="@drawable/ic_mod2"
+            android:title="Light Watch" />
+        <item
+            android:id="@+id/nav_mod3"
+            android:icon="@drawable/ic_mod3"
+            android:title="Ambiance Assistant" />
+        <item
+            android:id="@+id/nav_mod4"
+            android:icon="@drawable/ic_mod4"
+            android:title="Mail-Box Notifier" />
+        <item
+            android:id="@+id/nav_clear"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Clear Topics" /
+    </group>-->
+
+    <item android:title="Module-1">
+        <menu>
+            <item
+                android:id="@+id/nav_mod1"
+                android:icon="@drawable/ic_mod1"
+                android:title="Security through Geo-Fencing" />
+        </menu>
+    </item>
+    <item android:title="Module-2">
+        <menu>
+            <item
+                android:id="@+id/nav_mod2"
+                android:icon="@drawable/ic_mod2"
+                android:title="Light Watch" />
+            <item
+                android:id="@+id/nav_onoff"
+                android:icon="@drawable/ic_on_off"
+                android:title="Light On/Off" />
+        </menu>
+    </item>
+    <item android:title="Module-3">
+        <menu>
+            <item
+                android:id="@+id/nav_mod3"
+                android:icon="@drawable/ic_mod3"
+                android:title="Ambiance Assistant" />
+        </menu>
+    </item>
+    <item android:title="Module-4">
+        <menu>
+            <item
+                android:id="@+id/nav_mod4"
+                android:icon="@drawable/ic_mod4"
+                android:title="Mail-Box Notifier" />
+        </menu>
+    </item>
+    <item android:title="Misc">
+        <menu>
+            <item
+                android:id="@+id/nav_charge"
+                android:icon="@drawable/ic_battery"
+                android:title="Smart Charging" />
+        </menu>
+
+    </item>
+    <item android:title="Options">
+        <menu>
+            <item
+                android:id="@+id/nav_clear"
+                android:icon="@drawable/ic_clear"
+                android:title="Clear Topics" />
+        </menu>
+
+    </item>
+</menu>

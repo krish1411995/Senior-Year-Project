@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dell.homeonphoneaddingvaluetoyourhome"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="25" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.dell.homeonphoneaddingvaluetoyourhome.Splashscreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.dell.homeonphoneaddingvaluetoyourhome.Login"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.dell.homeonphoneaddingvaluetoyourhome.HomePage"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.dell.homeonphoneaddingvaluetoyourhome.HomeSecurity"
+            android:label="@string/title_activity_home_security"
+            android:parentActivityName="com.example.dell.homeonphoneaddingvaluetoyourhome.HomePage"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dell.homeonphoneaddingvaluetoyourhome.HomePage" />
+        </activity>
+        <activity
+            android:name="com.example.dell.homeonphoneaddingvaluetoyourhome.LightWatch"
+            android:label="@string/title_activity_light_watch"
+            android:parentActivityName="com.example.dell.homeonphoneaddingvaluetoyourhome.HomePage"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dell.homeonphoneaddingvaluetoyourhome.HomePage" />
+        </activity>
+        <activity
+            android:name="com.example.dell.homeonphoneaddingvaluetoyourhome.AmbianceAssistant"
+            android:label="@string/title_activity_ambiance_assistant"
+            android:parentActivityName="com.example.dell.homeonphoneaddingvaluetoyourhome.HomePage"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dell.homeonphoneaddingvaluetoyourhome.HomePage" />
+        </activity>
+        <activity
+            android:name="com.example.dell.homeonphoneaddingvaluetoyourhome.MailBoxNotification"
+            android:label="@string/title_activity_mail_box_notification"
+            android:parentActivityName="com.example.dell.homeonphoneaddingvaluetoyourhome.HomePage"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dell.homeonphoneaddingvaluetoyourhome.HomePage" />
+        </activity>
+        <activity
+            android:name="com.example.dell.homeonphoneaddingvaluetoyourhome.On_Off"
+            android:label="@string/title_activity_on__off"
+            android:parentActivityName="com.example.dell.homeonphoneaddingvaluetoyourhome.HomePage"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dell.homeonphoneaddingvaluetoyourhome.HomePage" />
+        </activity>
+
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
+        <service
+            android:name="com.example.dell.homeonphoneaddingvaluetoyourhome.BackgroundService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.dell.homeonphoneaddingvaluetoyourhome.ClearTopic"
+            android:label="@string/title_activity_clear_topic"
+            android:parentActivityName="com.example.dell.homeonphoneaddingvaluetoyourhome.HomePage"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dell.homeonphoneaddingvaluetoyourhome.HomePage" />
+        </activity>
+        <activity
+            android:name="com.example.dell.homeonphoneaddingvaluetoyourhome.SmartCharging"
+            android:label="@string/title_activity_smart_charging"
+            android:parentActivityName="com.example.dell.homeonphoneaddingvaluetoyourhome.HomePage"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dell.homeonphoneaddingvaluetoyourhome.HomePage" />
+        </activity>
+
+        <service
+            android:name="com.example.dell.homeonphoneaddingvaluetoyourhome.BatteryService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

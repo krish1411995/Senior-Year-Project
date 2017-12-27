@@ -1,0 +1,7 @@
+#Sat Apr 15 10:12:07 IST 2017
+base.0=D\:\\AndroidStudioProjects\\HomeOnPhoneAddingValuetoyourHome\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_8dae4428e49ededc17799e90ff84bbd6ed0a9f6a
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=D\:\\AndroidStudioProjects\\HomeOnPhoneAddingValuetoyourHome\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_02b9a961e8485e2579eb760c75266032fc659c0c\\classes.dex
+base.1=D\:\\AndroidStudioProjects\\HomeOnPhoneAddingValuetoyourHome\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_02b9a961e8485e2579eb760c75266032fc659c0c
+file.0=D\:\\AndroidStudioProjects\\HomeOnPhoneAddingValuetoyourHome\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_8dae4428e49ededc17799e90ff84bbd6ed0a9f6a\\classes.dex

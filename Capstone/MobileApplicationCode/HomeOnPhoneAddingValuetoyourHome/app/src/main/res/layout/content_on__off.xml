@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_on__off"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.dell.homeonphoneaddingvaluetoyourhome.On_Off"
+    tools:showIn="@layout/activity_on__off">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bulboff"
+        android:id="@+id/imageView6"
+        android:layout_marginBottom="41dp"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:background="#00000000" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bulbon"
+        android:id="@+id/imageView5"
+        android:layout_alignBottom="@+id/imageView6"
+        android:layout_alignRight="@+id/imageView6"
+        android:layout_alignEnd="@+id/imageView6"
+        android:layout_alignLeft="@+id/imageView6"
+        android:layout_alignStart="@+id/imageView6"
+        android:background="#00000000" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="250dp">
+
+            <TextView
+                android:text="Device Status"
+                android:layout_width="178dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView14"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="30sp"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:fontFamily="sans-serif-condensed" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textView2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="30sp"
+                android:textStyle="bold|italic"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_weight="1"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="35dp">
+
+            <Button
+                android:text="On"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="On"
+                android:id="@+id/button"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="Off"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/button2"
+                android:onClick="Off"
+                android:layout_alignBaseline="@+id/button"
+                android:layout_alignBottom="@+id/button"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
