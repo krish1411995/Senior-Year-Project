@@ -13,12 +13,10 @@ local function mqtt_start()
     print("After sleep")
     -- register message callback beforehand
     m:connect(config.HOST, config.PORT, 0, 0, function(con)
-        -- And then pings each 1000 milliseconds
         print("Connected. Before pinging")
         tmr.alarm(6, 50000, 1, send_ping)
     end)
-      --krish1.start()
-      dht11.start()   
+      mailbox.start()   
 end
 function module.start()
   mqtt_start()
