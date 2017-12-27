@@ -3,6 +3,7 @@
 The init file is uploaded in the NodeMCU which is connected with the Dimmer Circuit. When the Automatic button from the application is pressed then the topic /nodemcu/intensity will have a send "hello" and then after every time interval the tem() function of init.lua file will run, which will check the value of the LDR(attached with nodeMCU), calculate and then automatically set the intensity of the bulb. In the manual mode the topic /nodemcu/intensity will send the values like 10%,20%,...,100% to change the intensity of the bulb manually.
 
 # Dimmer Circuit
+
 ## Introduction
 
 The board can be used in applications where dimming of 110-220V AC power is required like dimming of bulb or fan. The input can be simple 4 bit high/low signal from microcontroller working at 3V or 5V which is isolated with the use of opto-couplers. Total of 16 levels of power control can be set from totally off(0%) to full on(100%) as per input control levels.
